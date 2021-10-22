@@ -1,8 +1,12 @@
+import Header from "./Header";
+import Footer from "./Footer";
+
 function Layout({ children }) {
   return (
-    <div>
-      <h2>This is the header</h2>
-      <main>{children}</main>
+    <div className="flex flex-col h-screen">
+      <Header />
+      <main className="flex-1">{children}</main>
+      <Footer />
     </div>
   );
 }
